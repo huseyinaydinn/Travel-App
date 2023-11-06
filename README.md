@@ -7,6 +7,6 @@ Uygulama Şehir seçimine göre Otel bulma ve oda bulma ile ilgili. React, Types
 - Searchbar date seçim işlemleri ve tarih yazdırma formatı için date-fns kütüphanesinden yararlanıldı.
 - Geçiş efektleri framer-motion ile yapıldı.
 - Sayfa içi iconlar React icons kütüphanesinden alındı.
--Scroll durumunu izlemek için react-intersection-observer kütüphanesinden useInView kullanıldı.
--Slider için Swiper.js componenti kullanıldı.
--Kullanılan cihazın genişliğini yakalamak için React-responsive içindeki useMediaQuery yönetemi kullanıldı.
+- Scroll durumunu izlemek için react-intersection-observer kütüphanesinden useInView kullanıldı.
+- Slider için Swiper.js componenti kullanıldı.
+- Kullanılan cihazın genişliğini yakalamak için React-responsive içindeki useMediaQuery yönetemi kullanıldı.
