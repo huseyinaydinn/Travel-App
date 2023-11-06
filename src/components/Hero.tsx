@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 export default function Hero() {
   const { searchActive } = useContext(SearchContext);
   return (
-    <section className="bg-[#dedede] pt-8 md:h-screen" id="home">
+    <section className="bg-[#dedede] md:h-screen pt-12" id="home">
       <div className="container mx-auto h-full xl:pt-10">
         {/* text&img wrapper */}
         <div className="flex flex-col xl:flex-row justify-center items-center xl:justify-between h-auto">
