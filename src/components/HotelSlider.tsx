@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { MdFastfood } from "react-icons/md";
 import { AiOutlineWifi } from "react-icons/ai";
+import Hotel1 from '../assets/images/hotelSlider/slider-1.png'
+import Hotel2 from '../assets/images/hotelSlider/slider-2.png'
+import Hotel3 from '../assets/images/hotelSlider/slider-3.png'
 
 interface HotelInfo {
   icon: JSX.Element;
@@ -24,7 +27,7 @@ const hotels: Hotel[] = [
     type: "Hotel",
     name: "Maldives",
     price: "299 $",
-    image: "src/assets/images/hotelSlider/slider-1.png",
+    image: Hotel1,
     info: [
       {
         icon: <MdFastfood />,
@@ -46,7 +49,7 @@ const hotels: Hotel[] = [
     type: "Hotel",
     name: "Antalya",
     price: "299 $",
-    image: "src/assets/images/hotelSlider/slider-2.png",
+    image: Hotel2,
     info: [
       {
         icon: <MdFastfood />,
@@ -68,7 +71,7 @@ const hotels: Hotel[] = [
     type: "Hotel",
     name: "Dubai",
     price: "299 $",
-    image: "src/assets/images/hotelSlider/slider-3.png",
+    image: Hotel3,
     info: [
       {
         icon: <MdFastfood />,

@@ -4,6 +4,7 @@ import SearchMobile from "./SearchMobile";
 import { useMediaQuery } from "react-responsive";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { SearchContext, SearchContextType } from "../context/search";
+import Logo from '../assets/icons/logo.svg'
 
 export default function Header() {
   const { setSearchActive } = useContext<SearchContextType>(SearchContext);
@@ -50,7 +51,7 @@ export default function Header() {
             className="cursor-pointer"
           >
             <img
-              src="src/assets/icons/Logo.svg"
+              src={Logo}
               alt="Logo"
               width={120}
               height={64}
