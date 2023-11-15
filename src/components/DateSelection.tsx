@@ -2,17 +2,15 @@ import { useState } from "react";
 import { Menu } from "@headlessui/react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-// React date
-import { DateRange, DateRangeProps } from "react-date-range";
+import { DateRange } from "react-date-range";
 import { format, addDays } from "date-fns";
 
-// React date CSS
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
 export default function DateSelection() {
   const initialStartDate = new Date();
-  const [date, setDate] = useState<DateRangeProps["ranges"][0]>({
+  const [date, setDate] = useState({
     startDate: initialStartDate,
     endDate: undefined,
     key: "selection",
@@ -41,7 +39,7 @@ export default function DateSelection() {
           </Menu.Button>
           <Menu.Items className="dropdown-menu shadow-lg absolute -top-96 xl:top-[90px] left-1/2 xl:left-0 z-50 transform -translate-x-1/2 xl:-translate-x-0 rounded-[10px]">
             <DateRange
-              onChange={(item) => setDate(item.selection ?? date)}
+              onChange={() => setDate(date)}
               editableDateInputs={true}
               moveRangeOnFirstSelection={false}
               ranges={[date]}
@@ -54,3 +52,7 @@ export default function DateSelection() {
     </>
   );
 }
+
+
+
+
